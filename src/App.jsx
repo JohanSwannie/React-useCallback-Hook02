@@ -29,10 +29,10 @@ function App() {
   );
 
   const addButton = () => {
-    const bt = document.querySelector(".buttonContainer");
-    const eb = document.createElement("button");
-    eb.innerHTML = "X";
-    bt.appendChild(eb);
+    const xc = document.querySelector(".xContainer");
+    const bt = document.createElement("button");
+    bt.innerHTML = "X";
+    xc.appendChild(bt);
   };
 
   return (
@@ -43,10 +43,8 @@ function App() {
           <li key={index}>{person}</li>
         ))}
       </ul>
-      <div className="buttonContainer">
-        <button className="firstButton" onClick={addButton}>
-          Click Me
-        </button>
+      <div className="xContainer grid grid-cols-10">
+        <button onClick={addButton}>Add X</button>
       </div>
     </div>
   );
