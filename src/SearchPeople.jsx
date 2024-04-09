@@ -1,7 +1,6 @@
 import { memo } from "react";
 
 function SearchPeople({ handleSearch }) {
-  console.log("Search Rendered");
   return (
     <div>
       <input
